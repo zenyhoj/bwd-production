@@ -1,0 +1,19 @@
+input,
+button {
+  padding: 10px;
+}
+
+input,
+button,
+label {
+  font-size: 1.4rem;
+  display: block;
+}
+
+button {
+  margin-top: 10px;
+}
+
+h2 {
+  display: block;
+}
