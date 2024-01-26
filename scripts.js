@@ -10,11 +10,11 @@ document.querySelector(".calculate").addEventListener("click", function () {
   let inputQ = Number(document.querySelector("#discharge").value);
   let height = Number(document.querySelector("#tank-height").value);
 
-  function timeToFill(q, tankHeight) {
+  let timeToFill = (q, tankHeight) => {
     let waterInTank = pi * radius ** 2 * (tankHeight * ftToMeters) * cuFtTocuM;
     let totalHoursNeeded = (tankVolume - waterInTank) / (q * 3.6);
     return Math.ceil(totalHoursNeeded);
-  }
+  };
   let text = document.createTextNode(
     `Time needed to fill with reservoir level at ${height}m: ${timeToFill(
       inputQ,
