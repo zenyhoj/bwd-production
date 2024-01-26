@@ -28,7 +28,7 @@ document.querySelector(".calculate").addEventListener("click", function () {
   }
 
   let newH2 = document.createElement("h2");
-  newH2.classList.add("h2");
+  // newH2.classList.add("h2");
 
   newH2.appendChild(
     !inputQ || !height
